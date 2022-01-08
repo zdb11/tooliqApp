@@ -1,0 +1,8 @@
+.jumbotron{
+    background-image: url("../img/header_img.jpg");
+    height: 220px;
+}
+.head_text{
+    margin-left: 2%;
+    color: #575757;
+}
