@@ -1,8 +1,17 @@
 .jumbotron{
-    background-image: url("../img/header_img.jpg");
+    background-image: url("../img/header-img.jpg");
     height: 220px;
 }
 .head_text{
     margin-left: 2%;
     color: #575757;
+}
+#home{
+    text-decoration: none;
+    color: #575757;
+}
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }

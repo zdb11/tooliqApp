@@ -11,7 +11,8 @@ public class Tool {
     private String producer;
     private String description;
     @Column(length = 1024)
-    private String parameters;
+    private int parameterSpeed;
+    private float parameterFeed;
     private String hyperlink;
     private String imgUrl;
 
@@ -43,16 +44,24 @@ public class Tool {
         return description;
     }
 
-    public void setDescription(String shortDescription) {
-        this.description = shortDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getParameters() {
-        return parameters;
+    public int getParameterSpeed() {
+        return parameterSpeed;
     }
 
-    public void setParameters(String description) {
-        this.parameters = description;
+    public void setParameterSpeed(int parameterSpeed) {
+        this.parameterSpeed = parameterSpeed;
+    }
+
+    public float getParameterFeed() {
+        return parameterFeed;
+    }
+
+    public void setParameterFeed(float parameterFeed) {
+        this.parameterFeed = parameterFeed;
     }
 
     public String getHyperlink() {

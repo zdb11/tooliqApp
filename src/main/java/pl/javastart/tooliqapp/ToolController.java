@@ -24,13 +24,4 @@ public class ToolController {
         return tool.map(tl -> "tool").orElse("redirect:/");
     }
 
-//      Żeby metoda zadziała należy również usunąć Optionala w ToolRepository
-//
-//    @GetMapping("/{hyperlink}")
-//    public String getTool(@PathVariable String hyperlink, Model model){
-//        Tool tool = toolRepository.findByHyperlink(hyperlink);
-//        model.addAttribute("tool",tool);
-//        return "tool";
-//    }
-
 }

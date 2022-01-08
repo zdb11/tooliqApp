@@ -1,12 +1,12 @@
-insert into tool(id, name, producer, description, parameters, hyperlink, img_url) VALUES
-                                                                                      (1, 'Frez trzpieniowy','Garant', 'Frez 16 mm, zgrubny, 4 ostrza',
-                                                                                       'Parametry','frez-trzp','xyx'),
+insert into tool(id, name, producer, description, parameter_speed, parameter_feed, hyperlink) VALUES
+                                                                                      (1, 'Frez trzpieniowy','Garant', 'Frez zgrubny, D=16 mm, 4 ostrza',
+                                                                                       '120','0.7','frez-trzp'),
                                                                                       (2, 'Wiertło VHM','Kyocera', 'Wiertło 8 mm, chłodzenie przez wrzeciono ',
-                                                                                       'Parametry','wiertlo-mono','xyx'),
-                                                                                      (3, 'Nóż tokarski','Mitsubishi', 'Płytka WNMG',
-                                                                                       'Parametry','noz-tokarski','xyx'),
-                                                                                      (4, 'Głowica frezarska','Kyocera', 'Głowica 50 mm, płytki XYZ x 8',
-                                                                                       'Parametry','glowica-frez','xyx');
+                                                                                       '160','0.2','wiertlo-mono'),
+                                                                                      (3, 'Nóż tokarski','Teknik', 'Nóz do toczenia zewnętrznego, płytka WN--0804--',
+                                                                                       '220','0.25','noz-tokarski'),
+                                                                                      (4, 'Głowica frezarska','Kyocera', 'Głowica 32 mm, płytki PR15-- lub CA6535',
+                                                                                       '160','0.13','glowica-frez');
 
 insert into client_order(id, address, telephone, status) VALUES
                                                              (1, 'Zakrzewskiego 23/5, 50-225 Wrocław', '888777666', 'NEW'),
