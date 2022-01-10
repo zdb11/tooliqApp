@@ -8,13 +8,33 @@
 <header th:fragment="common-header">
     <div class="jumbotron">
         <div class="head_text">
-        <a id="home" th:href="@{/}" >
+        <a id="home" th:href="@{/home}" >
         <h1 class="display-4">Tooliq   <i class="fas fa-toolbox"></i></h1>
         </a>
         <p class="lead">System zarządzania wypożyczeniami sprzętu w Twojej firmie.</p>
         </div>
     </div>
 </header>
+
+<div th:fragment="succes">
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+            <h1 class="display-3" th:text="${result.title}">Udało się</h1>
+            <p th:text="${result.comment}">Operacja wykonana pomyślnie</p>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="fail">
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+            <h1 class="display-3" th:text="${result.title}">Udało się</h1>
+            <p th:text="${result.comment}">Operacja wykonana pomyślnie</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

@@ -8,13 +8,13 @@ insert into tool(id, name, producer, description, parameter_speed, parameter_fee
                                                                                       (4, 'Głowica frezarska','Kyocera', 'Głowica 32 mm, płytki PR15-- lub CA6535',
                                                                                        '160','0.13','glowica-frez');
 
-insert into client_order(id, address, telephone, status) VALUES
-                                                             (1, 'Zakrzewskiego 23/5, 50-225 Wrocław', '888777666', 'NEW'),
-                                                             (2, 'Kościuszki 13, 52-316 Wrocław', '767454989', 'NEW'),
-                                                             (3, 'Krakowska 88/16, 51-515 Wrocław', '666234123', 'IN_PROGRESS'),
-                                                             (4, 'Centralna 8/12, 55-100 Wrocław', '598787999', 'IN_PROGRESS'),
-                                                             (5, 'Dworcowa 33, 51-200 Wrocław', '600700900', 'COMPLETE'),
-                                                             (6, 'Krucza 66/4, 53-300 Wrocław', '696787898', 'COMPLETE');
+insert into client_order(id, full_name, department, status) VALUES
+                                                             (1, 'Fabian Ziółkowska', 'Tokarki', 'NEW'),
+                                                             (2, 'Dariusz Rutkowski', 'Frezarki', 'NEW'),
+                                                             (3, 'Paula Czarnecka', 'Tokarki', 'IN_PROGRESS'),
+                                                             (4, 'Danuta Krupa', 'Ślusarnia', 'IN_PROGRESS'),
+                                                             (5, 'Alana Jankowska', 'EDM', 'COMPLETE'),
+                                                             (6, 'Roman Sokołowski', 'Frezarki', 'COMPLETE');
 
 insert into order_tool (order_id, tool_id) values
                                                (1, 1),

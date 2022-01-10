@@ -14,7 +14,7 @@ public class HomeController {
         this.toolRepository = toolRepository;
     }
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String toolList(Model model){
         model.addAttribute("tools", toolRepository.findAll());
         return "index";

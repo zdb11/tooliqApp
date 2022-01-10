@@ -18,8 +18,8 @@ public class Order {
             inverseJoinColumns = @JoinColumn(name = "tool_id", referencedColumnName = "id")
     )
     private List<Tool> tools = new ArrayList<>();
-    private String address;
-    private String telephone;
+    private String fullName;
+    private String department;
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
@@ -39,20 +39,20 @@ public class Order {
         this.tools = tools;
     }
 
-    public String getAddress() {
-        return address;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public String getTelephone() {
-        return telephone;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     public OrderStatus getStatus() {

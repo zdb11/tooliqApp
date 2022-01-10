@@ -24,8 +24,9 @@
             <li class="list-group-item" th:text="${tool.description}">Opis</li>
         </ul>
         <div class="card-body">
-            <a th:href="@{/}"><button type="button" class="btn btn-outline-secondary">Strona głowna</button></a>
-            <a><button type="button" class="btn btn-outline-success">Wypożycz</button></a>
+            <a th:href="@{/home}"><button type="button" class="btn btn-outline-secondary">Strona głowna</button></a>
+            <a th:href="|/saveTool/${tool.id}|"><button type="button" class="btn btn-outline-success">Wypożycz</button></a>
+
         </div>
     </div>
 </body>
