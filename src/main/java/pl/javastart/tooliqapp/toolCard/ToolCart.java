@@ -11,14 +11,14 @@ import pl.javastart.tooliqapp.tool.Tool;
 
 @Service
 @SessionScope
-public class ToolCard {
+public class ToolCart {
     private Order order;
 
-    public ToolCard() {
-        newCard();
+    public ToolCart() {
+        newCart();
     }
 
-    private void newCard(){
+    public void newCart(){
         order = new Order();
         order.setStatus(OrderStatus.NEW);
     }
@@ -30,4 +30,5 @@ public class ToolCard {
     public Order getOrder() {
         return order;
     }
+
 }

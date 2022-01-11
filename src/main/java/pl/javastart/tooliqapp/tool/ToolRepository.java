@@ -8,4 +8,5 @@ import java.util.Optional;
 @Repository
 public interface ToolRepository extends JpaRepository<Tool, Long> {
     Optional<Tool> findByHyperlink(String hyperlink);
+
 }

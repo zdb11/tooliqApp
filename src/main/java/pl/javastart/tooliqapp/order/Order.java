@@ -23,6 +23,16 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
+    public Order(List<Tool> tools, String fullName, String department, OrderStatus status) {
+        this.tools = tools;
+        this.fullName = fullName;
+        this.department = department;
+        this.status = status;
+    }
+
+    public Order() {
+    }
+
     public Long getId() {
         return id;
     }

@@ -1,40 +1,37 @@
-package pl.javastart.tooliqapp;
+package pl.javastart.tooliqapp.controllers;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import pl.javastart.tooliqapp.tool.Tool;
 import pl.javastart.tooliqapp.tool.ToolRepository;
 import pl.javastart.tooliqapp.toolCard.Result;
-import pl.javastart.tooliqapp.toolCard.ToolCard;
+import pl.javastart.tooliqapp.toolCard.ToolCart;
 
-import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 @Controller
 public class ToolController {
     private final ToolRepository toolRepository;
-    private ToolCard toolCard;
+    private final ToolCart toolCart;
 
-    public ToolController(ToolRepository toolRepository, ToolCard toolCard) {
+    public ToolController(ToolRepository toolRepository, ToolCart toolCart) {
         this.toolRepository = toolRepository;
-        this.toolCard = toolCard;
+        this.toolCart = toolCart;
     }
 
     @GetMapping("/tool/{hyperlink}")
     public String getTool(@PathVariable String hyperlink, Model model){
         Optional<Tool> tool = toolRepository.findByHyperlink(hyperlink);
         tool.ifPresent(tl->model.addAttribute("tool",tl));
-
         return tool.map(tl -> "tool").orElse("redirect:/home");
     }
 
     @GetMapping("/saveTool/{id}")
     public String saveTool(@PathVariable Long id, Model model){
         Optional<Tool> tool = toolRepository.findById(id);
-        tool.ifPresent(toolCard::addTool);
+        tool.ifPresent(toolCart::addTool);
         if(tool.isPresent()){
             model.addAttribute("result",new Result("Udało się!","Narzędzie zostało dodane do koszyka."));
         }else{

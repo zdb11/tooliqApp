@@ -14,7 +14,6 @@ public class Tool {
     private int parameterSpeed;
     private float parameterFeed;
     private String hyperlink;
-    private String imgUrl;
 
     public Long getId() {
         return id;
@@ -72,11 +71,4 @@ public class Tool {
         this.hyperlink = hyperlink;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
-    }
-
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
-    }
 }

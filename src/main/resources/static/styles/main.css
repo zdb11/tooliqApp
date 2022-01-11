@@ -14,8 +14,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    width: 50rem
 }
 .container{
     width: 25%;
     min-width: 260px;
+}
+.toolCartButton{
+    padding: 2px;
 }
