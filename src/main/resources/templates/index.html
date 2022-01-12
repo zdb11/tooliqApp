@@ -12,7 +12,7 @@
 </head>
 <body>
     <header th:replace="fragments :: common-header"></header>
-    <div class="toolCartButton">
+    <div class="m-1">
         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-basket3"></i> Twoje zamówienie</button>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -46,7 +46,7 @@
                     </form>
                 </div>
             </div>
-            <div th:unless="${toolCart.size()>0}">
+            <div class="text-center" th:unless="${toolCart.size()>0}">
                 <span >Twoje zamówienie jest puste, dodaj coś do niego!</span>
             </div>
         </div>

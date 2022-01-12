@@ -9,7 +9,7 @@
 </head>
 <body>
     <header th:replace="fragments :: common-header"></header>
-    <div class="card" >
+    <div class="card container col-5 mt-3" >
         <img th:src="|/img/${tool.hyperlink}.jpg|" class="card-img-top" alt="Zdjęcie narzędzia">
         <div class="card-body">
             <h5 class="card-title" th:text="${tool.name}">Nazwa narzędzia</h5>
@@ -25,7 +25,7 @@
         </ul>
         <div class="card-body">
             <a th:href="@{/home}"><button type="button" class="btn btn-outline-secondary">Strona głowna</button></a>
-            <a th:href="|/saveTool/${tool.id}|"><button type="button" class="btn btn-outline-success">Wypożycz</button></a>
+            <a th:href="|/saveTool/${tool.id}|"><button type="button" class="btn btn-outline-success">Dodaj do koszyka</button></a>
 
         </div>
     </div>

@@ -23,5 +23,9 @@ public class HomeController {
         model.addAttribute("toolCart", toolCart.getOrder().getTools());
         return "index";
     }
+    @GetMapping("/error")
+    public String errorSite(){
+        return "error";
+    }
 
 }

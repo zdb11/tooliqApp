@@ -1,7 +1,18 @@
 package pl.javastart.tooliqapp.order;
 
 public enum OrderStatus {
-    NEW,
-    IN_PROGRESS,
-    COMPLETE
+    NEW("Nowy"),
+    IN_PROGRESS("W trakcie"),
+    COMPLETE("Zrealizowany");
+
+    private final String translate;
+
+    OrderStatus(String translate) {
+        this.translate = translate;
+    }
+
+    public String getTranslate() {
+        return translate;
+    }
+
 }

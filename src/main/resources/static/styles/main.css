@@ -3,23 +3,10 @@
     height: 220px;
 }
 .head_text{
-    margin-left: 2%;
     color: #575757;
 }
 #home{
     text-decoration: none;
     color: #575757;
 }
-.card{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    width: 50rem
-}
-.container{
-    width: 25%;
-    min-width: 260px;
-}
-.toolCartButton{
-    padding: 2px;
-}
+
