@@ -1,4 +1,4 @@
-package pl.javastart.tooliqapp.order;
+package pl.core.tooliqapp.order;
 
 public enum OrderStatus {
     NEW("Nowy"),

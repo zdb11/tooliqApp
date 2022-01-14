@@ -1,12 +1,12 @@
-package pl.javastart.tooliqapp.toolCard;
+package pl.core.tooliqapp.toolCard;
 
 
 import org.springframework.stereotype.Service;
 
 import org.springframework.web.context.annotation.SessionScope;
-import pl.javastart.tooliqapp.order.Order;
-import pl.javastart.tooliqapp.order.OrderStatus;
-import pl.javastart.tooliqapp.tool.Tool;
+import pl.core.tooliqapp.order.Order;
+import pl.core.tooliqapp.order.OrderStatus;
+import pl.core.tooliqapp.tool.Tool;
 
 
 @Service

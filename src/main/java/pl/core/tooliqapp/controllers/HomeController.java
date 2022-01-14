@@ -1,10 +1,10 @@
-package pl.javastart.tooliqapp.controllers;
+package pl.core.tooliqapp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import pl.javastart.tooliqapp.tool.ToolRepository;
-import pl.javastart.tooliqapp.toolCard.ToolCart;
+import pl.core.tooliqapp.tool.ToolRepository;
+import pl.core.tooliqapp.toolCard.ToolCart;
 
 
 @Controller

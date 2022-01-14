@@ -1,4 +1,4 @@
-package pl.javastart.tooliqapp.tool;
+package pl.core.tooliqapp.tool;
 
 import javax.persistence.*;
 

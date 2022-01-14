@@ -1,10 +1,8 @@
-package pl.javastart.tooliqapp.order;
+package pl.core.tooliqapp.order;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.javastart.tooliqapp.order.Order;
-import pl.javastart.tooliqapp.order.OrderRepository;
-import pl.javastart.tooliqapp.toolCard.ToolCart;
+import pl.core.tooliqapp.toolCard.ToolCart;
 
 
 @Service

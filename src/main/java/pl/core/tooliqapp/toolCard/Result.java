@@ -1,4 +1,4 @@
-package pl.javastart.tooliqapp.toolCard;
+package pl.core.tooliqapp.toolCard;
 
 public class Result {
     private String title;

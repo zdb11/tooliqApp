@@ -1,4 +1,4 @@
-package pl.javastart.tooliqapp;
+package pl.core.tooliqapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

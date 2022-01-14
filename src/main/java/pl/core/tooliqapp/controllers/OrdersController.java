@@ -1,14 +1,14 @@
-package pl.javastart.tooliqapp.controllers;
+package pl.core.tooliqapp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import pl.javastart.tooliqapp.order.Order;
-import pl.javastart.tooliqapp.order.OrderRepository;
-import pl.javastart.tooliqapp.order.OrderService;
-import pl.javastart.tooliqapp.order.OrderStatus;
+import pl.core.tooliqapp.order.Order;
+import pl.core.tooliqapp.order.OrderRepository;
+import pl.core.tooliqapp.order.OrderService;
+import pl.core.tooliqapp.order.OrderStatus;
 
 import java.util.Optional;
 import java.util.stream.Collectors;

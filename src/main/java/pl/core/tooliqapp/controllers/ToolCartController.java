@@ -1,11 +1,11 @@
-package pl.javastart.tooliqapp.controllers;
+package pl.core.tooliqapp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
-import pl.javastart.tooliqapp.toolCard.Person;
-import pl.javastart.tooliqapp.toolCard.ToolCart;
-import pl.javastart.tooliqapp.order.OrderService;
+import pl.core.tooliqapp.toolCard.Person;
+import pl.core.tooliqapp.toolCard.ToolCart;
+import pl.core.tooliqapp.order.OrderService;
 
 
 @Controller

@@ -1,6 +1,6 @@
-package pl.javastart.tooliqapp.order;
+package pl.core.tooliqapp.order;
 
-import pl.javastart.tooliqapp.tool.Tool;
+import pl.core.tooliqapp.tool.Tool;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -72,4 +72,5 @@ public class Order {
     public void setStatus(OrderStatus status) {
         this.status = status;
     }
+
 }
