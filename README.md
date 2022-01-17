@@ -46,34 +46,29 @@
 
 
 ## Setup
-To open project you need instal Java 17, Apache Tomcat 9.0.56, download .jar file of that project and run application
+To open project you need instal Java 17, Apache Tomcat 9.0.56, download .jar file and run application
 with Spring Boot configuration. All dependenies are in pom.xml file.
 
 
 
 ## Project Status
-Project is: _complete_. 
+Project is: _in progress_. 
 
 
 ## Room for Improvement
-There's massive amount space to improve that project, the most valuable is:
+There's massive amount space to improve this project, the most valuable is:
 
 - Create panel to adding new tools.
-- Create mail service to obtain message every time your order change status
+- Create mail service to obtain message every time your order change status.
+- Add API. 
 
 
 ## Acknowledgements
 
-- This project was inspired by one of exercise in javastart.pl courses
+- This project was inspired by one of exercise in javastart.pl courses.
 - Thanks for README.md template to [@flynerdpl](https://www.flynerd.pl/)
 
 
 ## Contact
 I'm on  [Linkedin](https://www.linkedin.com/in/grzegorz-dziedzicki) - feel free to contact me!
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
