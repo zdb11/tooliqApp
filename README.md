@@ -1,12 +1,14 @@
 # Tooliq
 > Your own system to manage tools in your company!
-> 
+
+
+
 
 ## Table of Contents
 * [General Info](#general-information)
+* [Live](#live)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
@@ -19,6 +21,9 @@
 - Tooliq helps control tools order inside company.
 - Shows who and what tools he borrowed.
 - Helps you to manage with orders in dedicated panel.
+
+## Live
+https://user-images.githubusercontent.com/97344475/149815682-eaaf5948-b76b-44e8-9815-ebd3aa725d63.mp4
 
 
 ## Technologies Used
@@ -38,10 +43,6 @@
 - Check list of all orders, sort by status and edit.
 - Manage all orders changing their status from "new" to "in progress" to final "complete".
 
-
-
-## Screenshots
-![Example screenshot](./img/home.gif)
 
 
 
