@@ -1,4 +1,4 @@
-package pl.core.tooliqapp.controllers;
+package pl.core.tooliqapp.controllers.MVC;
 
 
 import org.springframework.stereotype.Controller;

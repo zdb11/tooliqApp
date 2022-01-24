@@ -4,6 +4,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.core.tooliqapp.toolCard.ToolCart;
 
+import java.util.List;
+import java.util.Optional;
+
 
 @Service
 public class OrderService {
@@ -14,10 +17,19 @@ public class OrderService {
     }
 
     @Transactional
-    public void orderCart(ToolCart toolCart){
-        Order order = toolCart.getOrder();
-        orderRepository.save(order);
+    public List<Order> getAllOrders(){
+        return orderRepository.findAll();
     }
+    @Transactional
+    public Optional<Order> findOrderById(Long id){
+        return orderRepository.findById(id);
+    }
+
+    @Transactional
+    public List<Order> getOrderByStatus(OrderStatus status){
+        return orderRepository.findAllByStatus(status);
+    }
+
     @Transactional
     public void updateStatusOrder(Order order){
         if(order.getStatus().equals(OrderStatus.NEW)){
@@ -29,4 +41,9 @@ public class OrderService {
         }
     }
 
+    @Transactional
+    public void orderCart(ToolCart toolCart){
+        Order order = toolCart.getOrder();
+        orderRepository.save(order);
+    }
 }

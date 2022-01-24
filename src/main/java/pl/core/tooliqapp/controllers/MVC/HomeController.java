@@ -1,4 +1,4 @@
-package pl.core.tooliqapp.controllers;
+package pl.core.tooliqapp.controllers.MVC;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,10 +22,6 @@ public class HomeController {
         model.addAttribute("tools", toolRepository.findAll());
         model.addAttribute("toolCart", toolCart.getOrder().getTools());
         return "index";
-    }
-    @GetMapping("/error")
-    public String errorSite(){
-        return "error";
     }
 
 }

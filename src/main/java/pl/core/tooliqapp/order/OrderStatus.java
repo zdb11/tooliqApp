@@ -14,5 +14,4 @@ public enum OrderStatus {
     public String getTranslate() {
         return translate;
     }
-
 }
