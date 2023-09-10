@@ -1,3 +1,5 @@
+First project which gives me a real job when I was starting to learn programming :smiley: A lot of good memories but, today I would do that in Node.js with Typescript. Maybe someday  :wink:
+
 # Tooliq
 > Your own system to manage tools in your company!
 
@@ -54,7 +56,7 @@ with Spring Boot configuration. All dependenies are in pom.xml file.
 
 
 ## Project Status
-Project is: _in progress_. 
+Project is: _done_. 
 
 
 ## Room for Improvement
@@ -62,7 +64,6 @@ There's massive amount space to improve this project, the most valuable is:
 
 - Create panel to adding new tools.
 - Create mail service to obtain message every time your order change status.
-- <s>Add API.</s>
 
 
 ## Acknowledgements
